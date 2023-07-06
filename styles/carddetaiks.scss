@@ -1,0 +1,81 @@
+.carddetails-div {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(90deg, #2c5364, #203a43, #0f2027);
+  z-index: 1100;
+  border-radius: 0.375vw;
+  padding: 1.25vw;
+
+  & > div {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5vw;
+  }
+}
+.modalHeading {
+  color: white;
+  text-transform: capitalize;
+  font-size: 1.875vw;
+  line-height: 2.25vw;
+  @media (max-width: 640px) {
+    font-size: 3.125vw;
+    line-height: 4.375vw;
+  }
+}
+.modalPara {
+  color: white;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  margin: 1.25vw;
+  font-weight: 600;
+  text-align: center;
+  @media (max-width: 640px) {
+    font-size: 3.125vw;
+    line-height: 4.375vw;
+  }
+}
+.nextBtn {
+  padding: 0.5vw 1vw;
+  font-weight: 700;
+  margin: 0.5vw 0.75vw;
+  border: none;
+  border-radius: 0.375vw;
+  background: rgb(29 78 216);
+  width: 24vw;
+  font-size: 100%;
+  cursor: pointer;
+  &:hover {
+    background: rgb(37 99 235);
+  }
+  @media (max-width: 640px) {
+    font-size: 3.125vw;
+    line-height: 4.375vw;
+  }
+}
+.closeBtn {
+  position: absolute;
+  top: -5%;
+  right: 3%;
+  cursor: pointer;
+  & > svg {
+    width: 1.5vw;
+    height: 1.5vw;
+    border: none;
+    outline: none;
+    @media (max-width: 640px) {
+      width: 4.5vw;
+      height: 5.5vw;
+    }
+  }
+  @media (max-width: 640px) {
+    top: -2%;
+    right: 2%;
+  }
+}
